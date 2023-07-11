@@ -4,17 +4,25 @@ body {
 
 .dark--wrapper {
     background-color: var(--background-accent);
-    color: var( --font-light);
+    color: var(--font-light);
 }
 
 .bckgrnd-img--wrapper {
-background-image: url(./assets/images/background-pink.jpeg);
-background-repeat: no-repeat;
-background-size: cover;
-width: 100%;
-min-height: 280px;
+    background-image: url(./assets/images/background-pink.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 280px;
 }
 
 .light--wrapper {
     background-color: var(--background-secondary);
+}
+
+.trending-story--webkit{
+    width: 300px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
