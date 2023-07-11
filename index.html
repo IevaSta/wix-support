@@ -21,17 +21,20 @@
 
 <body>
 
-    <header>
+    <header class="header-wrapper">
         <div class="logo">
             <a href="https://manage.wix.com/" target="_blank">WIX</a>
         </div>
 
         <nav class="nav">
-            <label class="burger">
+            <!-- <label class="burger">
                 <input class="burger__bar" type="checkbox">
                 <img src="./assets/svg/burger.svg" alt="Burger icon.">
                 </input>
-            </label>
+            </label> -->
+
+            <img class="burger" src="./assets/svg/burger.svg" alt="Burger icon.">
+
             <ul class="nav__list">
                 <li class="nav__list-item"><a class="nav__link" href="#" target="_blank">My
                         Sites</a></li>
@@ -48,38 +51,40 @@
                 <li class="nav__list-item">More
                     <img src="./assets/svg/menu-arrow.svg" alt="Menu arrow icon.">
                     <ul>
-                        <li>Enterprise
+                        <li class="nav__list-item-expand">Enterprise
                             <img src="./assets/svg/menu-arrow.svg" alt="Menu arrow icon.">
                         </li>
-                        <li class="nav__list-item"><a class="nav__link" href="#" target="_blank">Pricing</a></li>
-                        <li class="nav__list-item"><a class="nav__link" href="#" target="_blank">Support</a></li>
+                        <li class="nav__list-item-expand"><a class="nav__link" href="#" target="_blank">Pricing</a></li>
+                        <li class="nav__list-item-expand"><a class="nav__link" href="#" target="_blank">Support</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
 
         <div class="header__acc">
-            <label class="acc">
+            <!-- <label class="acc">
                 <input class="acc__bar" type="checkbox">
                 <img src="./assets/images/profile-img.png" alt="Profile image.">
                 </input>
-            </label>
-            <ul class="nav__list">
-                <li class="nav__list-item">Account Settings</li>
-                <li class="nav__list-item">Billing & Payments</li>
-                <li class="nav__list-item">Vouchers</li>
-                <li class="nav__list-item">English</li>
-                <li class="nav__list-item">Sign Out</li>
+            </label> -->
+            <img class="profile-nav" src="./assets/images/profile-img.png" alt="Profile image.">
+            <ul class="profile-nav__list">
+                <li>Account Settings</li>
+                <li>Billing & Payments</li>
+                <li>Vouchers</li>
+                <li>English</li>
+                <li>Sign Out</li>
             </ul>
         </div>
     </header>
 
     <main>
         <section class="ask-wrapper dark--wrapper">
-            <h1>How can we help?</h1>
-            <span>Ask us anything.</span>
-            <img src="./assets/svg/find.svg" alt="Magnifier.">
-            <input type="text" placeholder="Search by topic, product and more">
+            <h1 class="ask-wrapper--title">How can we help?</h1>
+            <span class="ask-wrapper--subtitle">Ask us anything.</span>
+            <label class="ask-wrapper__label">
+                <input class="ask-wrapper__input" type="text" placeholder="Search by topic, product and more">
+            </label>
         </section>
 
         <section class="categories-wrapper">
@@ -87,14 +92,14 @@
                 <a class="article__link" href="#" target="_blank">Getting started</a>
                 <ul class="article-list">
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        How to begin</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            How to begin</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Choosing a template</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Choosing a template</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Hiring a professional to build your site</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Hiring a professional to build your site</a></li>
                 </ul>
                 <a class="article__link" href="#" target="_blank">Show all</a>
             </article>
@@ -103,14 +108,14 @@
                 <a class="article__link" href="#" target="_blank">Creating your site</a>
                 <ul class="article-list">
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Using the Wix Editor</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Using the Wix Editor</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Using Editor X</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Using Editor X</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Managing your site</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Managing your site</a></li>
                 </ul>
                 <a class="article__link" href="#" target="_blank">Show all</a>
             </article>
@@ -119,11 +124,11 @@
                 <a class="article__link" href="#" target="_blank">Account & billing</a>
                 <ul class="article-list">
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Managing your account</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Managing your account</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Premium, billing & subscriptions</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Premium, billing & subscriptions</a></li>
                 </ul>
                 <a class="article__link" href="#" target="_blank">Show all</a>
             </article>
@@ -132,14 +137,14 @@
                 <a class="article__link" href="#" target="_blank">Using the Wix mobile apps</a>
                 <ul class="article-list">
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Mobile apps basics</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Mobile apps basics</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Managing your site with the Wix Owner app</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Managing your site with the Wix Owner app</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Mobile apps for your customers</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Mobile apps for your customers</a></li>
                 </ul>
                 <a class="article__link" href="#" target="_blank">Show all</a>
             </article>
@@ -148,14 +153,14 @@
                 <a class="article__link" href="#" target="_blank">Connecting a domain</a>
                 <ul class="article-list">
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Domain basics</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Domain basics</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Wix domains</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Wix domains</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Domains purchased elsewhere</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Domains purchased elsewhere</a></li>
                 </ul>
                 <a class="article__link" href="#" target="_blank">Show all</a>
             </article>
@@ -164,14 +169,14 @@
                 <a class="article__link" href="#" target="_blank">Managing your business</a>
                 <ul class="article-list">
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Business solutions & apps</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Business solutions & apps</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Accepting payments on your site</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Accepting payments on your site</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Connecting a business email</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Connecting a business email</a></li>
                 </ul>
                 <a class="article__link" href="#" target="_blank">Show all</a>
             </article>
@@ -180,14 +185,14 @@
                 <a class="article__link" href="#" target="_blank">Promoting your site</a>
                 <ul class="article-list">
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        SEO (get found on Google)</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            SEO (get found on Google)</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Marketing integrations and tracking</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Marketing integrations and tracking</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Sending email marketing campaigns</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Sending email marketing campaigns</a></li>
                 </ul>
                 <a class="article__link" href="#" target="_blank">Show all</a>
             </article>
@@ -196,11 +201,11 @@
                 <a class="article__link" href="#" target="_blank">Wix Partners & Enterprise</a>
                 <ul class="article-list">
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Wix Partners</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Wix Partners</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Wix Enterprise</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Wix Enterprise</a></li>
                 </ul>
                 <a class="article__link" href="#" target="_blank">Show all</a>
             </article>
@@ -209,14 +214,14 @@
                 <a class="article__link" href="#" target="_blank">Need more help?</a>
                 <ul class="article-list">
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Solving technical issues</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Solving technical issues</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Solving performance and technical issues</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Solving performance and technical issues</a></li>
                     <li><a href="#" target="_blank">
-                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
-                        Contacting Wix Customer Care</a></li>
+                            <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                            Contacting Wix Customer Care</a></li>
                 </ul>
                 <a class="article__link" href="#" target="_blank">Show all</a>
             </article>
@@ -233,7 +238,8 @@
             <article>
                 <span>Connecting a domain</span>
                 <h3>Purchasing a Domain from Wix</h3>
-                <p class="trending-story--webkit">A domain name is your site's personalized, unique web address on the web. It's the text that people
+                <p class="trending-story--webkit">A domain name is your site's personalized, unique web address on the
+                    web. It's the text that people
                     type into a browser in order to reach your site, for example wix.com. This makes it easier for
                     visitors to find your site and helps to make your web presence more professional, by providing a
                     distinct online space for your company and brand.You can browse and purchase a domain directly from
@@ -291,7 +297,8 @@
             <article>
                 <span>Promoting your site</span>
                 <h3>Improving Your Online Presence with the Wix SEO Setup Checklist</h3>
-                <p class="trending-story--webkit">The Wix SEO Wiz is a step-by-step checklist designed to help you get found online. The SEO Wiz gives
+                <p class="trending-story--webkit">The Wix SEO Wiz is a step-by-step checklist designed to help you get
+                    found online. The SEO Wiz gives
                     you advice about the information your site needs to easily connect and verify your site with Google.
                     After you've connected, the SEO Wiz helps get your site indexed quickly so that your site appears in
                     search results. The SEO Wiz also gives you suggestions for improving your site's search engine
@@ -332,7 +339,8 @@
             <article>
                 <span>Connecting a domain</span>
                 <h3>Connecting or Transferring a Domain Purchased Elsewhere to Your Wix Account</h3>
-                <p class="trending-story--webkit">Your domain is the address of your website that people type in the browser URL bar to visit your
+                <p class="trending-story--webkit">Your domain is the address of your website that people type in the
+                    browser URL bar to visit your
                     website, for example, www.mystunningwebsite.com.You can connect or transfer a domain you've already
                     purchased from another provider to your Wix site. In this way, you can have more control over
                     managing your domain details from one central location - your Wix account. Learn more about
@@ -398,7 +406,8 @@
             <article>
                 <span>Creating your site</span>
                 <h3>Wix Editor: Publishing Your Site</h3>
-                <p class="trending-story--webkit">Ready to go live? It's time to publish your site. Once you publish, your site is available on the
+                <p class="trending-story--webkit">Ready to go live? It's time to publish your site. Once you publish,
+                    your site is available on the
                     Internet for the world to see. Learn more about: Publishing your site Viewing your live site
                     Frequently asked questions (FAQs) New to Wix?Wix offers a variety of templates and design tools to
                     help you create a professional looking website in no time. Go to Wix.com and click Get Started to
@@ -441,7 +450,8 @@
             <article>
                 <span>Managing your business</span>
                 <h3>Google Workspace: Purchasing and Setting up a Business Email</h3>
-                <p class="trending-story--webkit">Purchase a personalized Google Workspace business email directly from Wix (e.g.
+                <p class="trending-story--webkit">Purchase a personalized Google Workspace business email directly from
+                    Wix (e.g.
                     yourname@mybusiness.org). This can make your business look more professional and trustworthy while
                     also strengthening your brand. Important:The Google Workspace business email plans are not yet
                     available in all regions. Step 1 | Purchase a Google Workspace business emailYou can choose how many
@@ -501,7 +511,8 @@
             <article>
                 <span>Managing your business</span>
                 <h3>Wix Stores: Adding Wix Stores</h3>
-                <p class="trending-story--webkit">Add Wix Stores to create a professional online store and grow your eCommerce business. Wix Stores
+                <p class="trending-story--webkit">Add Wix Stores to create a professional online store and grow your
+                    eCommerce business. Wix Stores
                     gives you all the tools you need to create a beautiful online store. You can display your products
                     in stunning galleries, manage your inventory and orders in a professional dashboard, provide
                     customers with secured checkout, and more! If you want to choose a template that already has Wix

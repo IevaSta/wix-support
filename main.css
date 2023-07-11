@@ -2,10 +2,54 @@ body {
     font-family: 'Wix Madefor Display', sans-serif;
 }
 
+a {
+    color: var(--font-dark);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* header */
+.logo {
+    font-size: var(--heading-secondary-s);
+    font-weight: var(--font-weight-bold);
+}
+
+.nav__list,
+.header__acc {
+    display: none;
+}
+
+/* ask section */
+.ask-wrapper--title {
+    font-size: var(--heading-primary-s);
+}
+
+.ask-wrapper--subtitle{
+    font-size: var(--font-content-l);
+    margin: 6px 0 24px;
+}
+
 .dark--wrapper {
     background-color: var(--background-accent);
     color: var(--font-light);
 }
+
+.ask-wrapper__label {
+    position: relative;
+}
+
+.ask-wrapper__label:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: url(./assets/svg/find.svg);
+    background-repeat: no-repeat;
+}
+
+/* ----CODE HERE----- */
 
 .bckgrnd-img--wrapper {
     background-image: url(./assets/images/background-pink.jpeg);
@@ -19,7 +63,7 @@ body {
     background-color: var(--background-secondary);
 }
 
-.trending-story--webkit{
+.trending-story--webkit {
     width: 300px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
