@@ -5,16 +5,641 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- font -->
+    <!-- font style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/style/vars.css">
+    <link rel="stylesheet" href="./assets/style/layout.css">
+    <link rel="stylesheet" href="./main.css">
+
     <title>Wix Support</title>
 </head>
 
 <body>
+
+    <header>
+        <div class="logo">
+            <a href="https://manage.wix.com/" target="_blank">WIX</a>
+        </div>
+
+        <nav class="nav">
+            <label class="burger">
+                <input class="burger__bar" type="checkbox">
+                <img src="./assets/svg/burger.svg" alt="Burger icon.">
+                </input>
+            </label>
+            <ul class="nav__list">
+                <li class="nav__list-item"><a class="nav__link" href="#" target="_blank">My
+                        Sites</a></li>
+                <li class="nav__list-item">Creation
+                    <img src="./assets/svg/menu-arrow.svg" alt="Menu arrow icon.">
+                </li>
+                <li class="nav__list-item">Business
+                    <img src="./assets/svg/menu-arrow.svg" alt="Menu arrow icon.">
+                </li>
+                <li class="nav__list-item">Growth
+                    <img src="./assets/svg/menu-arrow.svg" alt="Menu arrow icon.">
+                </li>
+                <li class="nav__list-item">Resources</li>
+                <li class="nav__list-item">More
+                    <img src="./assets/svg/menu-arrow.svg" alt="Menu arrow icon.">
+                    <ul>
+                        <li>Enterprise
+                            <img src="./assets/svg/menu-arrow.svg" alt="Menu arrow icon.">
+                        </li>
+                        <li class="nav__list-item"><a class="nav__link" href="#" target="_blank">Pricing</a></li>
+                        <li class="nav__list-item"><a class="nav__link" href="#" target="_blank">Support</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__acc">
+            <label class="acc">
+                <input class="acc__bar" type="checkbox">
+                <img src="./assets/images/profile-img.png" alt="Profile image.">
+                </input>
+            </label>
+            <ul class="nav__list">
+                <li class="nav__list-item">Account Settings</li>
+                <li class="nav__list-item">Billing & Payments</li>
+                <li class="nav__list-item">Vouchers</li>
+                <li class="nav__list-item">English</li>
+                <li class="nav__list-item">Sign Out</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="ask-wrapper dar--wrapper">
+            <h1>How can we help?</h1>
+            <span>Ask us anything.</span>
+            <img src="./assets/svg/find.svg" alt="Magnifier.">
+            <input type="text" placeholder="Search by topic, product and more">
+        </section>
+
+        <section class="categories-wrapper">
+            <article>
+                <a class="article__link" href="#" target="_blank">Getting started</a>
+                <ul class="article-list">
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        How to begin</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Choosing a template</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Hiring a professional to build your site</a></li>
+                </ul>
+                <a class="article__link" href="#" target="_blank">Show all</a>
+            </article>
+
+            <article>
+                <a class="article__link" href="#" target="_blank">Creating your site</a>
+                <ul class="article-list">
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Using the Wix Editor</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Using Editor X</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Managing your site</a></li>
+                </ul>
+                <a class="article__link" href="#" target="_blank">Show all</a>
+            </article>
+
+            <article>
+                <a class="article__link" href="#" target="_blank">Account & billing</a>
+                <ul class="article-list">
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Managing your account</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Premium, billing & subscriptions</a></li>
+                </ul>
+                <a class="article__link" href="#" target="_blank">Show all</a>
+            </article>
+
+            <article>
+                <a class="article__link" href="#" target="_blank">Using the Wix mobile apps</a>
+                <ul class="article-list">
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Mobile apps basics</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Managing your site with the Wix Owner app</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Mobile apps for your customers</a></li>
+                </ul>
+                <a class="article__link" href="#" target="_blank">Show all</a>
+            </article>
+
+            <article>
+                <a class="article__link" href="#" target="_blank">Connecting a domain</a>
+                <ul class="article-list">
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Domain basics</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Wix domains</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Domains purchased elsewhere</a></li>
+                </ul>
+                <a class="article__link" href="#" target="_blank">Show all</a>
+            </article>
+
+            <article>
+                <a class="article__link" href="#" target="_blank">Managing your business</a>
+                <ul class="article-list">
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Business solutions & apps</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Accepting payments on your site</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Connecting a business email</a></li>
+                </ul>
+                <a class="article__link" href="#" target="_blank">Show all</a>
+            </article>
+
+            <article>
+                <a class="article__link" href="#" target="_blank">Promoting your site</a>
+                <ul class="article-list">
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        SEO (get found on Google)</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Marketing integrations and tracking</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Sending email marketing campaigns</a></li>
+                </ul>
+                <a class="article__link" href="#" target="_blank">Show all</a>
+            </article>
+
+            <article>
+                <a class="article__link" href="#" target="_blank">Wix Partners & Enterprise</a>
+                <ul class="article-list">
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Wix Partners</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Wix Enterprise</a></li>
+                </ul>
+                <a class="article__link" href="#" target="_blank">Show all</a>
+            </article>
+
+            <article>
+                <a class="article__link" href="#" target="_blank">Need more help?</a>
+                <ul class="article-list">
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Solving technical issues</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Solving performance and technical issues</a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="./assets/svg/arrow.svg" alt="Arrow.">
+                        Contacting Wix Customer Care</a></li>
+                </ul>
+                <a class="article__link" href="#" target="_blank">Show all</a>
+            </article>
+        </section>
+
+        <section class="new-product-wrapper bckgrnd-img--wrapper">
+            <h2>New! Wix Product Roadmap</h2>
+            <span>Stay up to date with what we're working on, planned releases and our newest features.</span>
+            <button>Take Me There</button>
+        </section>
+
+        <section class="trending-wrapper light--wrapper">
+            <h2>Trending Topics</h2>
+            <article>
+                <span>Connecting a domain</span>
+                <h3>Purchasing a Domain from Wix</h3>
+                <p>A domain name is your site's personalized, unique web address on the web. It's the text that people
+                    type into a browser in order to reach your site, for example wix.com. This makes it easier for
+                    visitors to find your site and helps to make your web presence more professional, by providing a
+                    distinct online space for your company and brand.You can browse and purchase a domain directly from
+                    Wix for your site.Before you begin: To connect your domain, you must upgrade your site to one of our
+                    Premium plans. You receive a free domain voucher when you purchase a yearly Combo, Unlimited, Pro,
+                    VIP, Business Basic, Business Unlimited or Business VIP Premium plan.In this article, learn more
+                    about: Purchasing a domain from Wix Wix domain pricing Frequently asked question (FAQs)Purchasing a
+                    domainChoose a domain name that suits your business needs (for example, you may want to mention your
+                    business name or type of business). Search for the desired name and extension (e.g. .com or .net) to
+                    see if they're available, and choose the best time period for your needs – 1 to 3 years.To purchase
+                    a domain: Go to your Domains page in your site. Click Buy a Domain. Enter a domain name and
+                    extension in the search field, then click Search. If the domain is available, click Get It to
+                    register it directly on Wix. Tip: If the domain you enter is not available, go back to step 2 and
+                    try another domain name and/or extension. Select the registration period and click Continue. Enter
+                    (or edit) your contact information and click Continue. Note: Under the GDPR, the personal details of
+                    users located in the EU (European Union) do not appear in the public WHOIS records. Personal
+                    information, such as the EU user's name, address, and email, may be disclosed to third parties with
+                    legitimate interest (which is determined by the domain registrar). Select a Privacy Protection
+                    level: Full Privacy Protection: Your contact details won't appear in the WHOIS domain information
+                    records. You can turn the privacy protection option on and off whenever you want. Users who opt for
+                    full privacy protection will also have their entire personal details hidden in the public WHOIS.
+                    Basic Protection: Your phone number and email are replaced with generic information. Those who wish
+                    to contact you will be redirected to a contact form that protects you from receiving spam. Your
+                    other information remains public - your country, state/province, and organization. You can only
+                    change it from basic to full privacy protection by manually extending the domain subscription..
+                    Click Continue. Select your payment method and click Submit Purchase.Wix domain pricingOnce you
+                    select an address for your site ﻿(by clicking Get It in step 4 above), you can see the registration
+                    periods available to you, which range from 1 to 3 years. The cost of a Wix domain differs depending
+                    on a number of factors, including: The type of domain extension Your local currency The number of
+                    years selected Adding privacy protection The use of a domain voucher Your local tax or VAT
+                    lawsFAQsClick a question below to learn more. What should I do if i'm experiencing issues with my
+                    bank's authentication process? After submitting your purchase, your bank may require you to verify
+                    your identity. If you're experiencing any issues with the authentication process, you need to
+                    contact your bank directly. Learn more about strong customer authentication (SCA) requirements for
+                    online purchases.How much does it cost to renew my Wix domain?Learn more about the renewal cost of a
+                    Wix domain, including those purchased using a free domain voucher.What is the character limit for
+                    Wix domains?The character limit of a domain purchased from Wix is 60 characters, except for .com.br,
+                    which has a limit of 26 characters.I'd like to know more about the domain registration process? We
+                    have prepared an article for you to learn more about domain registration including a general
+                    overview and a list of FAQs. Where can I find a list of available domain extensions?You can see a
+                    list of available domain extensions at this link. How can I add a Business Email to my domain? Get a
+                    personalized mailbox for your custom domain through our partnership with Google Workspace. Learn how
+                    to get a Business Email.Can I purchase a premium domain name from Wix?Premium domains are domain
+                    names that have been deemed high-value by other registrars. They are often bought (and resold) by
+                    investors for a profit. Such names are decided by each registrar, at their own discretion.You cannot
+                    purchase a premium domain from Wix. You can choose to purchase a premium domain from another
+                    registrar and connect the domain instead.Is it possible to remove 'www' from my domain name?No. It
+                    is not possible to remove 'www' from your domain name, as it is part of a web address'
+                    structure.Your site visitors may leave out the 'www' prefix when entering your site's web address.
+                    They will still reach your site, but the URL in their browser automatically updates to show the
+                    'www' part.</p>
+                <a href="#" target="_blank">Read Article</a>
+            </article>
+
+            <article>
+                <span>Promoting your site</span>
+                <h3>Improving Your Online Presence with the Wix SEO Setup Checklist</h3>
+                <p>The Wix SEO Wiz is a step-by-step checklist designed to help you get found online. The SEO Wiz gives
+                    you advice about the information your site needs to easily connect and verify your site with Google.
+                    After you've connected, the SEO Wiz helps get your site indexed quickly so that your site appears in
+                    search results. The SEO Wiz also gives you suggestions for improving your site's search engine
+                    optimization (SEO) so that your site ranks higher in search results.Each step of the SEO Wiz gives
+                    you helpful tips in easy-to-follow tutorials. You can also track your success with achievement
+                    updates as you complete each step in your checklist.In this article, learn more about: How the SEO
+                    Wiz helps your site's SEO Creating your checklist with the SEO Wiz Important information about the
+                    SEO WizHow the Wix SEO Wiz helps your site's SEOYou can use the Wix SEO Wiz to create a personalized
+                    checklist to improve your site's SEO and search engine ranking. It uses the information you provide
+                    about your business and the keywords that you add. By following the steps of your checklist, you can
+                    make sure your site is ready to connect to Google and optimize your site so that it ranks higher in
+                    search results. In the first part of your SEO checklist, you add the information that your homepage
+                    needs so you can connect your site to Google and verify it. This includes adding your homepage's
+                    title and description, integrating your keywords into your site's content, and optimizing your site
+                    for mobile devices.In the second part of your checklist, you optimize your sites content to help
+                    improve its ranking in search engine results. Add your contact details, connect social networks, and
+                    add internal links to connect your homepage and your other pages. In the third part of your
+                    checklist, you can find useful information about improving your site to rank higher and learn how to
+                    hire a Wix SEO Partner to get expert advice from SEO professionals.Creating your checklist with the
+                    SEO WizYou can create your own customized checklist in the SEO Wiz by answering just three
+                    questions. Enter the name of your business, select whether you serve your customers from a physical
+                    address or online, and add three keywords that describe your business and what you offer. That's
+                    it!You can also use Wix's Semrush integration to help you find strong keywords for your site.Learn
+                    more about creating your SEO checklistImportant information about the SEO WizBefore you start using
+                    the SEO Wiz, we recommend reading the information below about some of its requirements and
+                    limitations. Your site must be connected to a domain to connect to Google Search Console through the
+                    SEO Wiz. Only site owners and admin contributors can access the SEO Wiz. It is not available to
+                    back-office managers. Learn more about site contributor roles and permissions The SEO Wiz does not
+                    analyze your blog or other business solution features like Wix Stores or Wix Music. It is possible
+                    to skip a step and complete the steps after it. However, any step you skip will show as incomplete
+                    until you finish it. You also won't be able to complete your SEO Wiz until you finish all of the
+                    steps.Want to learn more?You can read about Wix's great SEO features and how to use them in the
+                    Complete Wix SEO Guide.
+                </p>
+                <a href="#" target="_blank">Read Article</a>
+            </article>
+
+            <article>
+                <span>Connecting a domain</span>
+                <h3>Connecting or Transferring a Domain Purchased Elsewhere to Your Wix Account</h3>
+                <p>Your domain is the address of your website that people type in the browser URL bar to visit your
+                    website, for example, www.mystunningwebsite.com.You can connect or transfer a domain you've already
+                    purchased from another provider to your Wix site. In this way, you can have more control over
+                    managing your domain details from one central location - your Wix account. Learn more about
+                    transferring vs. connecting a domain to your Wix account to learn which option suits your needs.
+                    Important: You must upgrade your site with a Premium plan to connect or transfer a domain. You'll
+                    need access to your current domain registrar before you connect or transfer a domain. The registrar
+                    is the company that hosts your domain. If you don't know who your domain registrar is, you can find
+                    out by visiting whois.com and entering your domain name to see your domain details. Connecting a
+                    domain to your siteConnecting your domain to Wix (also known as “domain mapping”) means that the
+                    domain management stays with your current domain host, but the URL of your domain points to your Wix
+                    site. This means that when people type in your web address (e.g. www.mywebsite.com) they will be be
+                    brought to your Wix site. There are two ways in which you can connect your domain to Wix - via name
+                    servers or via pointing. The method you use to connect your domain determines where the DNS records
+                    of your domain are hosted. DNS (Domain Name System) records tell your domain where to go to load
+                    your website. If you want to connect a domain you already own to your Wix account, we strongly
+                    recommend you do so by changing its name servers.Name servers vs. pointing:Learn more about the
+                    differences between connecting your domain by name servers vs. by pointing.Connecting via
+                    nameservers (recommended method)With this connection method, Wix hosts your DNS records, while your
+                    domain remains registered with its current host. This means that your Wix site appears online when
+                    someone enters your domain name URL into a web browser. Entering your details takes 5 minutes, and
+                    we'll walk you through the process.Follow our steps to connect your domain to the Wix name
+                    servers.Connecting via pointingBy connecting via the pointing method, your DNS records are hosted
+                    outside of Wix. We do not recommend pointing because we're unable to assist you with issues that may
+                    arise in another DNS host's account. However, if your domain has complicated DNS records (e.g.
+                    Office 365 email) that you prefer not to reconfigure, pointing may be your best option. Learn how to
+                    connect your domain via the pointing method. Transferring a domain to WixIf you’ve already purchased
+                    a domain from another provider, it may be possible to transfer that domain from its current
+                    registrar to Wix. This option, independent of a domain’s connection method, lets you manage not only
+                    your domain records at Wix, but also your contact information, DNS records, and your domain's
+                    registration payments. If you choose this option, your domain needs to meet certain conditions in
+                    order to be transferable. Read more about the conditions that need to exist before transferring your
+                    domain.Tip:Most yearly Premium plans offer a one year free domain voucher that can be used to claim
+                    a new domain, or for one year of free registration when you transfer your domain to Wix.Connecting
+                    secondary domains to your siteYour primary domain is usually the domain name you choose when you
+                    first purchase your domain from Wix. You can choose a different domain as your primary domain, but
+                    you can only have one primary domain.Secondary domains redirect to your primary domain. You can
+                    easily connect secondary domains to this primary domain. You can add an unlimited number of Wix
+                    domains, or up to six externally-purchased domains, to a single Wix site. If you're connecting an
+                    additional domain purchased elsewhere, you must first connect the domain in your account before you
+                    can set it up to redirect to your primary domain.Learn more about connecting multiple domains to
+                    your Wix site.Connecting subdomains to your siteA subdomain is a domain that is part of a larger
+                    domain. It is related to the main or root domain and is the portion to the left of your URL. (e.g.
+                    'shop.mywebsite.com' may be a subdomain that is part of your main domain URL 'mywebsite.com'). You
+                    can connect subdomains in your Wix account. For example, if you own the root domain
+                    mystunningwebsite.com, you can connect blog.mystunningwebsite.com to your blog website. Read our
+                    subdomains overview for more information. Learn how to connect a subdomain to your main Wix
+                    domain.What's next?Make it easier for people to contact you. Get a personalized business email for
+                    your custom domain through our partnership with Google Workspace.FAQsHow long does it take for my
+                    domain connection to become active? After connecting your domain, these new records can take up to
+                    48 hours to propagate. During this time you may notice your site not loading, loading
+                    inconsistently, or loading a message which says 'Not Secure'. Learn more about domain propagation.
+                    If I connect my domain to Wix via name servers, where are my billing and contact details for my
+                    domain hosted?Billing and contact details are managed at your current domain host, not at Wix.
+                    Contact your existing domain host for assistance with domain renewals, contact information, and
+                    other domain-related billing inquiries.Can I switch to a different connection method even if I've
+                    already started connecting my domain? Yes. You can change the connection method for your domain at
+                    any time by removing and re-adding the domain to your Wix account. Learn more about switching your
+                    domain connection method.
+                </p>
+                <a href="#" target="_blank">Read Article</a>
+            </article>
+
+            <article>
+                <span>Creating your site</span>
+                <h3>Wix Editor: Publishing Your Site</h3>
+                <p>Ready to go live? It's time to publish your site. Once you publish, your site is available on the
+                    Internet for the world to see. Learn more about: Publishing your site Viewing your live site
+                    Frequently asked questions (FAQs) New to Wix?Wix offers a variety of templates and design tools to
+                    help you create a professional looking website in no time. Go to Wix.com and click Get Started to
+                    sign up and start creating.Publishing your siteYou can publish your site at any time from the top
+                    toolbar of the Editor. Even after publishing, you can edit your site as much as you want. Whenever
+                    you make a change, simply publish again to make sure the changes go live.Check your site before you
+                    publish:Click Preview at the top right of the Editor to see how your site looks before publishing.
+                    To publish your site: Click Publish at the top right of the Editor. (Optional) Click View Site to be
+                    taken to your live site. Click Done to return to the Editor.Not quite ready to go public?That's OK,
+                    you can publish your site, but temporarily prevent search engines from indexing it. That way you can
+                    share your site with friends and family before it gets indexed on Google. Viewing your live
+                    siteAfter your site has been published, it automatically appears online and can be seen by anyone
+                    entering your site URL or domain name.You can also access your live site from the Editor. Click Site
+                    on the top bar of the Editor and click View Site.If you want to show your site to your friends, you
+                    can email them your site URL or domain name, or share it on social media.FAQsClick a question below
+                    to learn more about publishing.Why doesn't my newly published site appear when I browse to my
+                    domain?Your site comes with a free Wix URL in the format accountname.wixsite.com/siteaddress. If you
+                    connected your site to your own domain, it may take up to 48 hours for your site to appear when
+                    accessing to your domain on the Internet. Click here to learn more about your domain propagationHow
+                    do I go back to a previous version after I have published my site? You can view and restore an older
+                    version of your site at any time. Click here to learn more about your site history.I published my
+                    site, why can't I find it on Google?New sites, pages, and updates may take some time to appear on
+                    search engine results, as they need to be crawled and indexed by Google. You can check if search
+                    engines like Google and Bing have indexed your site, enter &quot;site:&quot; followed by the URL of
+                    your domain. For example, &quot;site:mystunningwebsite.com/&quot;. Click here to learn moreTip:
+                    Optimize your site's SEO to get it found on search engines. Optimizing SEO may also improve your
+                    site's ranking on search result pages. Click here to learn moreI want to add a new page, but I don't
+                    want people to be able to see it yet. How can I do that?No problem. There are 2 ways you can prevent
+                    visitors from seeing a new page: Hide the page from your site menu. Click here to learn how Prevent
+                    search engines from indexing the page, so it doesn't show up in search results. Click here to learn
+                    how This way, no one will be able to find the page unless you give them a direct link.Why did I
+                    receive an error message when trying to publish?There are a few common reasons why you may receive
+                    error when trying to publish your site. Most are related to connectivity, or sign in issues. Learn
+                    more about these issues.What's next?Make sure your site looks great on every screen size. Head over
+                    to the mobile site Editor to customize the mobile view. Click here to check it out
+                </p>
+                <a href="#" target="_blank">Read Article</a>
+            </article>
+
+            <article>
+                <span>Managing your business</span>
+                <h3>Google Workspace: Purchasing and Setting up a Business Email</h3>
+                <p>Purchase a personalized Google Workspace business email directly from Wix (e.g.
+                    yourname@mybusiness.org). This can make your business look more professional and trustworthy while
+                    also strengthening your brand. Important:The Google Workspace business email plans are not yet
+                    available in all regions. Step 1 | Purchase a Google Workspace business emailYou can choose how many
+                    emails you want to have and select a plan the meets your business needs. Wix offers 3 Google
+                    Workspace email plans for your to choose from: Business Starter, Business Standard and Business
+                    Plus. Learn more about the benefits of each option. Before you begin:To purchase a Google Workspace
+                    email, you must own a domain (from Wix or elsewhere) and add it to the Domains section of your
+                    account.To purchase a Google Workspace business email: Go to Business Email in your Wix account.
+                    Click Get a Business Email. Note: If you have more than 1 domain, click Get a Business Email next to
+                    the relevant domain. Set the quantity of business emails you want to purchase. Enter your email
+                    prefix(es). Click Continue. Select the Google Workspace plan you want. Choose a business email
+                    subscription: Monthly or Yearly. Click Continue to Checkout. Select your payment method and click
+                    Submit Purchase. Important: After purchasing your business emails, wait a minimum of 5 minutes
+                    before beginning the setup process. If you have connected your domain via pointing, you must
+                    manually enter the MX records for Google Workspace with your domain provider. Learn more about about
+                    Google Workspace MX record values.Step 2 | Set up your Google Workspace business emailOnce you've
+                    purchased a Google Workspace business email from Wix, set it up with a password (and any additional
+                    emails) so you can start using it.To set up your Google Workspace business email: Go to Business
+                    Email in your Wix account. Click Setup Business Email. Type in a primary email address. Enter a
+                    password. Verify your password. (Optional) Enter the details for additional emails in the blank
+                    email fields. Click Next. Confirm your contact details. Click Submit.Important:Once you have
+                    purchased and set up your business email(s), make sure to sign into the admin business email to
+                    accept the Google Product Agreement. You cannot access any of your other business emails until you
+                    have accepted the agreement.FAQsWe are here to help you with all your questions. Click a question
+                    below to learn more:Can I use Google services in all countries/regions?Google Workspace is available
+                    in most countries and regions. However, Google does not allow access to some of its services in
+                    certain countries/regions, such as China, Crimea, Cuba, Iran, Myanmar, North Korea, Sudan and Syria.
+                    For more detailed information about Google Workspace availability, you can contact Google Workspace
+                    Support. How much does a business email cost? Business email prices depend on a few factors,
+                    including the Google Workspace plan you choose. Business emails are purchased separately from
+                    Premium plans.Note: You don't need an active Premium plan to purchase a business email.Can I
+                    purchase more than one business email? You can purchase several emails for each domain, for example,
+                    info@mystunningwebsite.com and support@mystunningwebsite.com. If you have already purchased a Google
+                    Workspace email, you can also purchase additional emails for the same domain. Is there any limit on
+                    the amount of business emails I can buy? You can buy up to 500 business emails, but you can only
+                    purchase 20 per transaction. For example, if you want to have 100 business emails, you need to
+                    purchase them 20 at a time - so you would need to make five transactions.What do I need to do to
+                    activate my business email? Once you purchase your business email, accept the Google Terms of
+                    Service in the business email admin account, and verify your domain if prompted, your business
+                    account is activated and should be fully functional within 24 hours. What can I do if I am
+                    experiencing issues with the authentication process? After submitting your purchase, your bank may
+                    require you to verify your identity. If you're experiencing any issues with the authentication
+                    process, contact your bank directly. Learn more about Strong Customer Authentication.What happens if
+                    I try to purchase an email address I already own?If you try to purchase an email address you already
+                    own (existing in your WIx account or outside it), you will see a message explaining that it is not
+                    available because it already belongs to you. The purchase will not go through.For an email address
+                    bought through Wix, check your business email page in your site. For an email address bought outside
+                    of Wix, contact your external provider.How long should I wait after purchasing a business email in
+                    order to set it up?After purchasing your business email, wait up to 5 minutes before beginning the
+                    setup process.What happens if I don't accept the Terms of Service?If you don't accept the Terms of
+                    Service in the business email admin account, your email will be suspended. You will then need to
+                    contact Wix Customer Care and may need to carry out some further verifications.
+                </p>
+                <a href="#" target="_blank">Read Article</a>
+            </article>
+
+            <article>
+                <span>Managing your business</span>
+                <h3>Wix Stores: Adding Wix Stores</h3>
+                <p>Add Wix Stores to create a professional online store and grow your eCommerce business. Wix Stores
+                    gives you all the tools you need to create a beautiful online store. You can display your products
+                    in stunning galleries, manage your inventory and orders in a professional dashboard, provide
+                    customers with secured checkout, and more! If you want to choose a template that already has Wix
+                    Stores installed, go to our store templates.Important: To sell products, you need to upgrade to a
+                    Business Premium plan. Review the legal requirements for Wix features before adding Wix
+                    Stores.Adding Wix StoresYou can add Wix Stores from inside your Editor or from your site's
+                    dashboard. Wix EditorEditor XDashboardADI Click Add Elements on the left side of the Editor. Click
+                    Store. Click + Add to Site. Click Add Elements at the top of Editor X. Click Store. Click Add to
+                    Site.If you add Wix Stores from your site's dashboard, you need to go to your Editor afterwards and
+                    add the pending app inside your Editor as well. Go to your site's dashboard. Click Apps on the left
+                    menu. Click App Market. Search for 'Wix Stores'. Click the Wix Stores app. Click Add to Site. Click
+                    Go to Editor. Click Add to Site. Click Add on the top bar inside ADI. Click Apps. Hover over Online
+                    Store. Click Add. About the pages in Wix Stores After adding Wix Stores, you get several new pages
+                    on your site. A new page called Shop is added which contains your product gallery. You also get 4
+                    additional hidden pages: Product Page: The page which displays info about one product. Category
+                    Page: The main store page (this new page is not yet available for all). Cart Page: Where customers
+                    review products before checking out. Checkout Page : Where customers complete purchases. Thank You
+                    Page: The page customers view after a purchase.Pages for your members are also automatically added
+                    so that customers can log in and view their order(s) status, store their addresses and manage credit
+                    cards for faster checkout (e.g. My Orders, My Addresses).Want to learn more?Check out the full
+                    course in Wix Learn about getting started with Wix eCommerce and learn how to expand your commercial
+                    reach.
+                </p>
+                <a href="#" target="_blank">Read Article</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="more-pages">
+            <nav>
+                <article>
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Website Templates</a></li>
+                        <li><a href="#" target="_blank">Website Builder</a></li>
+                        <li><a href="#" target="_blank">Website Design</a></li>
+                        <li><a href="#" target="_blank">Wix Features</a></li>
+                        <li><a href="#" target="_blank">App Market</a></li>
+                        <li><a href="#" target="_blank">Web Hosting</a></li>
+                        <li><a href="#" target="_blank">Domain Names</a></li>
+                        <li><a href="#" target="_blank">Website Accessibility</a></li>
+                        <li><a href="#" target="_blank">Mobile App Builder</a></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Online Store</a></li>
+                        <li><a href="#" target="_blank">Online Booking</a></li>
+                        <li><a href="#" target="_blank">Restaurant Website</a></li>
+                        <li><a href="#" target="_blank">Blog Website</a></li>
+                        <li><a href="#" target="_blank">Portfolio Website</a></li>
+                        <li><a href="#" target="_blank">Enterprise Solutions</a></li>
+                        <li><a href="#" target="_blank">Student Website</a></li>
+                        <li><a href="#" target="_blank">Professional Tools</a></li>
+                        <li><a href="#" target="_blank">Business Email</a></li>
+                        <li><a href="#" target="_blank"> Logo Maker</a></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Wix Blog</a></li>
+                        <li><a href="#" target="_blank">Privacy and Security Hub</a></li>
+                        <li><a href="#" target="_blank">SEO Learning Hub</a></li>
+                        <li><a href="#" target="_blank">Wix Encyclopedia</a></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Help Center</a></li>
+                        <li><a href="#" target="_blank">Hire a Professional</a></li>
+                        <li><a href="#" target="_blank">Report Abuse</a></li>
+                        <li><a href="#" target="_blank">System Status</a></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Press & Media</a></li>
+                        <li><a href="#" target="_blank">Investor Relations</a></li>
+                        <li><a href="#" target="_blank">Wix Capital</a></li>
+                        <li><a href="#" target="_blank">Accessibility Statement</a></li>
+                        <li><a href="#" target="_blank">Patent Notice</a></li>
+                        <li><a href="#" target="_blank">Sitemap</a></li>
+                        <li><a href="#" target="_blank">Careers</a></li>
+                    </ul>
+                </article>
+            </nav>
+        </section>
+
+        <aside class="about-us-wrapper">
+            <div class="logo">
+                <a href="https://manage.wix.com/" target="_blank">WIX</a>
+            </div>
+            <p>The Wix website builder offers a complete solution from enterprise-grade infrastructure and business
+                features to advanced SEO and marketing tools–enabling anyone to create and grow online.</p>
+            <a href="#" target="_blank">About</a>
+            <a href="#" target="_blank">Contact Us</a>
+        </aside>
+
+        <div class="address-wrapper">
+            <address class="social-media-wrapper">
+                <ul>
+                    <li><a href="#" target="_blank">
+                            <img src="./assets/svg/facebook.svg" alt="Facebook icon.">
+                        </a></li>
+                    <li><a href="#" target="_blank">
+                            <img src="./assets/svg/youtube.svg" alt="Youtube icon.">
+                        </a></li>
+                    <li><a href="#" target="_blank">
+                            <img src="./assets/svg/instagram.svg" alt="Instagram icon.">
+                        </a></li>
+                    <li><a href="#" target="_blank">
+                            <img src="./assets/svg/tiktok.svg" alt="TikTok icon.">
+                        </a></li>
+                    <li><a href="#" target="_blank">
+                            <img src="./assets/svg/pinterest.svg" alt="Pinterest icon.">
+                        </a></li>
+                    <li><a href="#" target="_blank">
+                            <img src="./assets/svg/twitter.svg" alt="Twitter icon.">
+                        </a></li>
+                    <li><a href="#" target="_blank">
+                            <img src="./assets/svg/linkedin.svg" alt="LinkedIn icon.">
+                        </a></li>
+                </ul>
+            </address>
+            <a href="#" target="_blank">Terms of Use</a>
+            <a href="#" target="_blank">Privacy Policy</a>
+            <small>© 2006-2023 Wix.com, Inc</small>
+        </div>
+    </footer>
 
 </body>
 
