@@ -61,7 +61,7 @@ body {
 /* trending section */
 .trending-wrapper {
     width: 100%;
-    padding: 0 24px;
+    padding: 0 24px 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,3 +75,9 @@ body {
     max-width: 1200px;
     gap: 24px;
 }  
+
+.trending-wrapper__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
