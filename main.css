@@ -245,6 +245,10 @@ li {
     font-size: var(--font-content-m);
 }
 
+.policy-link {
+    margin-right: 20px;
+}
+
 @media (min-width: 768px) {
 
     /* ask section */
@@ -339,11 +343,64 @@ li {
 
     /* trending section */
     .trending__title--wrap {
-        font-size: var( --heading-primary-l);
+        font-size: var(--heading-primary-l);
         margin: 60px 0;
     }
 
+    /* more-pages section */
+    .address-wrapper--border {
+        border: unset;
+        padding: 0 54px 54px;
+    }
 
+    .footer-pages__title {
+        font-size: var(--font-content-l);
+        padding: 0;
+        line-height: 40px;
+
+    }
+
+    .unset--border-bottom--tablet {
+        border-bottom: unset;
+    }
+
+    .footer-pages__title>img {
+        display: none;
+    }
+
+    .footer-pages__list {
+        display: block;
+    }
+
+    .footer-pages__list>li {
+        font-size: var(--font-content-m);
+        line-height: 40px;
+    }
+
+    .about-us-wrapper {
+        padding: 48px 0 20px;
+    }
+
+    .about-us__link {
+        display: block;
+        font-size: var(--font-content-m);
+        margin: 10px 0;
+        font-weight: var(--font-weight-medium);
+    }
+
+    .policy-wrapper {
+        border-top: 1px solid var(--border);
+        padding: 30px 54px;
+    }
+
+    .policy-link,
+    .policy-copyright {
+        font-size: var(--font-content-m);
+    }
+
+    .policy-link {
+        margin-right: 40px;
+    }
 }
 
 @media (min-width: 1440px) {}
