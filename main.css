@@ -72,6 +72,28 @@ a {
     outline: 5px solid var(--input-active-outline);
 }
 
+
+/* categories section */
+.categories-article-list,
+.categories-article__show-all {
+    display: none;
+}
+
+.categories-article__link {
+    pointer-events: none;
+    color: var(--font-medium);
+    font-size: var(--heading-article);
+    font-weight: var(--font-weight-bold);
+    border-bottom: 1px solid var(--border);
+}
+
+.unset--border-bottom {
+    border-bottom: unset;
+}
+/* new product section */
+
+
+
 .bckgrnd-img--wrapper {
     background-image: url(./assets/images/background-pink.jpeg);
     background-repeat: no-repeat;
@@ -79,10 +101,6 @@ a {
     width: 100%;
     min-height: 280px;
 }
-
-
-
-
 
 .light--wrapper {
     background-color: var(--background-secondary);
