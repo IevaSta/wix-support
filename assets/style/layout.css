@@ -35,3 +35,17 @@ body {
     align-items: center;
     padding: 24px;
 }
+
+/* categories section */
+.categories-wrapper{
+    padding: 0 24px;
+}
+
+.categories-article__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+/* new product section */

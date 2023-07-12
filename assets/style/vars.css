@@ -6,6 +6,7 @@
 
     /* font colors */
     --font-dark: #000624;
+    --font-medium: #333853;
     --font-light: #fff;
     --font-accent: #116dff;
     --font-hover: #5999ff;
@@ -32,10 +33,12 @@
 
 
 
-    /* input */
-    /* --input-active-: #c1e4fe; */
+    /* borders */
     --input-active-outline: #a8caff;
     --input-active-border: #084ebd;
+
+    --border: #cfd1dc;
+
 
 
 
