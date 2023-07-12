@@ -324,6 +324,20 @@ li {
         color: var(--font-focused);
     }
 
+    /* new product section */
+    .new-product__title--no-wrap{
+        display: none;
+    }
+
+    .new-product__title--wrap {
+        font-size: var(--heading-secondary-l);
+    }
+    
+    .new-product__button--wrap {
+        margin-top: 29px;
+    }
+
+
 }
 
 @media (min-width: 1440px) {}
