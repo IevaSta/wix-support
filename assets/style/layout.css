@@ -16,6 +16,7 @@ body {
     position: fixed;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: 54px;
     padding: 15px 24px;
@@ -107,3 +108,44 @@ body {
     flex-wrap: wrap;
     gap: 15px;
 }
+
+@media (min-width: 768px) {
+
+    /* header */
+    body {
+        margin-top: 72px;
+    }
+
+    .header-wrapper {
+        height: 72px;
+    }
+
+    /* ask section */
+    .ask-wrapper {
+        padding: 72px 24px;
+    }
+
+    /* categories section */
+    .categories-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 49px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .categories-article--padding {
+        padding: 30px;
+    }
+
+    .categories-article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+        overflow: hidden;
+    }
+
+}
+
+@media (min-width: 1440px) {}
