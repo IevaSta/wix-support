@@ -158,6 +158,11 @@ body {
         overflow: hidden;
     }
 
+    /* trending section */
+    .trending-wrapper {
+        padding-bottom: 86px;
+    }
+
     /* more-pages section */
     .more-pages {
         padding: 0 54px 54px;
