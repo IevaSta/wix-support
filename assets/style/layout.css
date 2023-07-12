@@ -7,12 +7,21 @@ body * {
 }
 
 /* -------mobile first------- */
+body {
+    margin-top: 54px;
+}
+
 /* header */
 .header-wrapper {
-    padding: 15px 24px;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 54px;
+    padding: 15px 24px;
+    top: 0;
+    background-color: var(--background-primary);
+    z-index: 1;
 }
 
 .burger {

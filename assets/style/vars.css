@@ -10,6 +10,7 @@
     --font-accent: #116dff;
     --font-hover: #5999ff;
     --font-focused: #084ebd;
+    --font-input: #868aa5;
 
     /* font size */
     --heading-primary-l: 40px;
@@ -32,5 +33,10 @@
 
 
     /* input */
-    --input-active-border: #c1e4fe;
+    /* --input-active-: #c1e4fe; */
+    --input-active-outline: #a8caff;
+    --input-active-border: #084ebd;
+
+
+
 }
