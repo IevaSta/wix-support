@@ -33,11 +33,12 @@
 
 
 
-    /* borders */
+    /* borders hovers */
     --input-active-outline: #a8caff;
     --input-active-border: #084ebd;
 
     --border: #cfd1dc;
+    --button-hover: #333853;
 
 
 

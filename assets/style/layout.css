@@ -49,3 +49,14 @@ body {
 }
 
 /* new product section */
+.new-product-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+}
+
+/* trending section */
+
