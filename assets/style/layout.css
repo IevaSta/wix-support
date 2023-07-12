@@ -16,6 +16,7 @@ body {
     position: fixed;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: 54px;
     padding: 15px 24px;
@@ -83,17 +84,29 @@ body {
 }
 
 /* more-pages section */
-
-.more-pages {
+.page-footer{
     display: flex;
-    flex-direction: column-reverse;
-    padding: 0 24px 48px;
-
+    flex-direction: column;
 }
 
-/* address section */
+.more-pages {
+    margin: 0 30px 48px;
+    order: 2;
+}
+
+.about-us-wrapper{
+    margin: 0 30px;
+}
+
 .address-wrapper {
-    padding: 30px 24px 54px;
+    padding: 30px 30px 0;
+    order: 3;
+}
+
+.policy-wrapper{
+    padding: 30px 30px 54px;
+
+    order: 4;
 }
 
 .social-media-wrapper__list {
@@ -107,3 +120,81 @@ body {
     flex-wrap: wrap;
     gap: 15px;
 }
+
+@media (min-width: 768px) {
+
+    /* header */
+    body {
+        margin-top: 72px;
+    }
+
+    .header-wrapper {
+        height: 72px;
+    }
+
+    /* ask section */
+    .ask-wrapper {
+        padding: 72px 24px;
+    }
+
+    /* categories section */
+    .categories-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 49px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .categories-article--padding {
+        padding: 30px;
+    }
+
+    .categories-article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+        overflow: hidden;
+    }
+
+    /* trending section */
+    .trending-wrapper {
+        padding-bottom: 86px;
+    }
+
+    /* more-pages section */
+    .more-pages {
+        padding: 0 54px 54px;
+    }
+
+    .about-us-wrapper{
+        order: 1;
+        width: 80%;
+        margin: 0 54px;
+    }
+    
+    .more-pages{
+        order: 3;
+        margin: 0;
+    }
+
+    .address-wrapper {
+        order: 2;
+        padding-top: 0;
+    }
+
+    .policy-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .more-pages__nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 54px;
+    }
+
+}
+
+@media (min-width: 1440px) {}
