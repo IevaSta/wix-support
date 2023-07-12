@@ -23,7 +23,9 @@
 
     <header class="header-wrapper header-wrapper--shadow">
         <div class="logo">
-            <a href="https://manage.wix.com/" target="_blank">WIX</a>
+            <a href="https://manage.wix.com/" target="_blank">
+                <img src="./assets/svg/wix.svg" alt="Wix logo.">
+            </a>
         </div>
 
         <nav class="nav">
@@ -806,8 +808,8 @@
         <section class="more-pages">
             <nav>
                 <article>
-                    <h4>Product</h4>
-                    <ul>
+                    <h4 class="footer-pages__title">Product <img src="./assets/svg/menu-arrow.svg"></h4>
+                    <ul class="footer-pages__list">
                         <li><a href="#" target="_blank">Website Templates</a></li>
                         <li><a href="#" target="_blank">Website Builder</a></li>
                         <li><a href="#" target="_blank">Website Design</a></li>
@@ -821,8 +823,8 @@
                 </article>
 
                 <article>
-                    <h4>Solutions</h4>
-                    <ul>
+                    <h4 class="footer-pages__title">Solutions <img src="./assets/svg/menu-arrow.svg"></h4>
+                    <ul class="footer-pages__list">
                         <li><a href="#" target="_blank">Online Store</a></li>
                         <li><a href="#" target="_blank">Online Booking</a></li>
                         <li><a href="#" target="_blank">Restaurant Website</a></li>
@@ -837,8 +839,8 @@
                 </article>
 
                 <article>
-                    <h4>Learn</h4>
-                    <ul>
+                    <h4 class="footer-pages__title">Learn <img src="./assets/svg/menu-arrow.svg"></h4>
+                    <ul class="footer-pages__list">
                         <li><a href="#" target="_blank">Wix Blog</a></li>
                         <li><a href="#" target="_blank">Privacy and Security Hub</a></li>
                         <li><a href="#" target="_blank">SEO Learning Hub</a></li>
@@ -847,8 +849,8 @@
                 </article>
 
                 <article>
-                    <h4>Support</h4>
-                    <ul>
+                    <h4 class="footer-pages__title">Support <img src="./assets/svg/menu-arrow.svg"></h4>
+                    <ul class="footer-pages__list">
                         <li><a href="#" target="_blank">Help Center</a></li>
                         <li><a href="#" target="_blank">Hire a Professional</a></li>
                         <li><a href="#" target="_blank">Report Abuse</a></li>
@@ -857,8 +859,8 @@
                 </article>
 
                 <article>
-                    <h4>Company</h4>
-                    <ul>
+                    <h4 class="footer-pages__title unset--border-bottom">Company <img src="./assets/svg/menu-arrow.svg"></h4>
+                    <ul class="footer-pages__list">
                         <li><a href="#" target="_blank">Press & Media</a></li>
                         <li><a href="#" target="_blank">Investor Relations</a></li>
                         <li><a href="#" target="_blank">Wix Capital</a></li>
@@ -869,21 +871,23 @@
                     </ul>
                 </article>
             </nav>
+
+            <article class="about-us-wrapper">
+                <div class="logo">
+                    <a href="https://manage.wix.com/" target="_blank">
+                        <img src="./assets/svg/wix.svg" alt="Wix logo.">
+                    </a>
+                </div>
+                <p class="about-us__content">The Wix website builder offers a complete solution from enterprise-grade infrastructure and business
+                    features to advanced SEO and marketing tools–enabling anyone to create and grow online.</p>
+                <a class="about-us__link" href="#" target="_blank">About</a>
+                <a class="about-us__link"  href="#" target="_blank">Contact Us</a>
+            </article>
         </section>
 
-        <aside class="about-us-wrapper">
-            <div class="logo">
-                <a href="https://manage.wix.com/" target="_blank">WIX</a>
-            </div>
-            <p>The Wix website builder offers a complete solution from enterprise-grade infrastructure and business
-                features to advanced SEO and marketing tools–enabling anyone to create and grow online.</p>
-            <a href="#" target="_blank">About</a>
-            <a href="#" target="_blank">Contact Us</a>
-        </aside>
-
-        <div class="address-wrapper">
-            <address class="social-media-wrapper">
-                <ul>
+        <section class="address-wrapper address-wrapper--border">
+            <address>
+                <ul class="social-media-wrapper__list">
                     <li><a href="#" target="_blank">
                             <img src="./assets/svg/facebook.svg" alt="Facebook icon.">
                         </a></li>
@@ -907,10 +911,13 @@
                         </a></li>
                 </ul>
             </address>
-            <a href="#" target="_blank">Terms of Use</a>
-            <a href="#" target="_blank">Privacy Policy</a>
-            <small>© 2006-2023 Wix.com, Inc</small>
-        </div>
+
+            <div class="policy-wrapper">
+                <a class="policy-link" href="#" target="_blank">Terms of Use</a>
+                <a class="policy-link" href="#" target="_blank">Privacy Policy</a>
+                <small class="policy-copyright">© 2006-2023 Wix.com, Inc</small>
+            </div>
+        </section>
     </footer>
 
 </body>
