@@ -137,6 +137,16 @@ a {
     background-color: var(--background-secondary);
 }
 
+.trending-wrapper__card--body {
+    width: 100%;
+    max-width: 336px;
+    min-height: 247px;
+    padding: 30px;
+    background-color: var(--background-primary);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+}
+
 .trending-story--webkit {
     width: 300px;
     display: -webkit-box;

@@ -37,7 +37,7 @@ body {
 }
 
 /* categories section */
-.categories-wrapper{
+.categories-wrapper {
     padding: 0 24px;
 }
 
@@ -59,4 +59,19 @@ body {
 }
 
 /* trending section */
+.trending-wrapper {
+    width: 100%;
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+}
 
+.trending-wrapper__cards-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 24px;
+}  
