@@ -48,6 +48,7 @@ li {
 .ask-wrapper__label {
     position: relative;
     width: 100%;
+    max-width: 618px;
     display: flex;
     justify-content: center;
 }
@@ -441,6 +442,7 @@ li {
 
     .profile-nav{
         border-radius: 50%;
+        height: 35px;
     }
 
 
