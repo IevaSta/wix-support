@@ -405,7 +405,7 @@ li {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     /* header */
     .nav__list,
     .header__acc{
@@ -427,11 +427,11 @@ li {
         margin-left: 5px;
     }
 
-    .nav__list-item--desktop-hide{
+    .nav__list-item--tablet-hide{
         display: none;
     }
 
-    .nav__list-item--border {
+    .nav__list-item--border-tablet {
         border-left: 1px solid var(--border);
         padding-left: 34px;
     }
@@ -444,6 +444,85 @@ li {
         border-radius: 50%;
         height: 35px;
     }
+}
+
+@media (min-width: 1440px) {
+    /* header */
+    .nav__list-item--tablet-hide{
+        display: block;
+    }
+
+    .nav__list-item--desktop-hide{
+        display: none;
+    }
+
+    .nav__list-item--border-dektop {
+        border-left: 1px solid var(--border);
+        padding-left: 34px;
+    }
+
+    /* categories section */
+
+
+
+    /* .categories-article-list,
+    .categories-article__show-all {
+        display: block;
+    }
+
+    .categories__arrow {
+        display: none;
+    }
+
+    .categories-article__link {
+        color: var(--font-medium);
+        font-size: var(--heading-article);
+        font-weight: var(--font-weight-bold);
+        border-bottom: unset;
+    }
+
+    .categories-article:nth-of-type(2n-1) {
+        border-right: 1px solid var(--border-light);
+    }
+
+    .categories-article {
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    .categories-article:nth-last-of-type(-n+2) {
+        border-bottom: unset;
+    }
+
+    .categories-article-list__link {
+        display: flex;
+        align-items: center;
+    }
+
+    .categories-article-list__link>span {
+        display: block;
+        max-width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        line-height: 29px;
+    }
+
+    .categories-article-list__link>img {
+        margin-right: 10px;
+    }
+
+    .categories-article__show-all {
+        font-size: var(--font-content-l);
+        color: var(--font-accent);
+    }
+
+    .categories-article__show-all:hover {
+        color: var(--font-hover);
+    }
+
+    .categories-article__show-all:focus {
+        color: var(--font-focused);
+    } */
 
 
 }
