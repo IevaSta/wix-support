@@ -48,6 +48,9 @@ li {
 .ask-wrapper__label {
     position: relative;
     width: 100%;
+    max-width: 618px;
+    display: flex;
+    justify-content: center;
 }
 
 .ask-wrapper__label:before {
@@ -63,6 +66,7 @@ li {
 
 .ask-wrapper__input {
     width: 100%;
+    max-width: 618px;
     height: 58px;
     padding-left: 50px;
     -webkit-border-radius: 50px;
@@ -357,7 +361,6 @@ li {
         font-size: var(--font-content-l);
         padding: 0;
         line-height: 40px;
-
     }
 
     .unset--border-bottom--tablet {
@@ -403,4 +406,84 @@ li {
     }
 }
 
-@media (min-width: 1440px) {}
+@media (min-width: 1024px) {
+
+    /* header */
+    .nav__list,
+    .header__acc {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__list-item {
+        margin-left: 34px;
+        display: flex;
+    }
+
+    .nav__list-item:hover,
+    .nav__link:hover {
+        cursor: pointer;
+        color: var(--font-accent);
+    }
+
+    .nav__list-item>img {
+        margin-left: 5px;
+    }
+
+    .nav__list-item--tablet-hide {
+        display: none;
+    }
+
+    .nav__list-item--border-tablet {
+        border-left: 1px solid var(--border);
+        padding-left: 34px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+
+    /* categories section */
+    .categories-article:nth-of-type(n) {
+        border: unset;
+        border-right: 1px solid var(--border-light);
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    .categories-article:nth-of-type(3n){
+        border-right: unset;
+
+    }
+
+    .categories-article:nth-last-of-type(-n+3) {
+        border-bottom: unset;
+    }
+
+    .profile-nav {
+        border-radius: 50%;
+        height: 35px;
+    }
+}
+
+@media (min-width: 1440px) {
+    /* header */
+    .nav__list-item--tablet-hide {
+        display: block;
+    }
+
+    .nav__list-item--desktop-hide {
+        display: none;
+    }
+
+    .nav__list-item--border-dektop {
+        border-left: 1px solid var(--border);
+        padding-left: 34px;
+    }
+
+    /* more-pages section */
+    .address-wrapper--border {
+        border-top: 1px solid  var(--border);
+        padding: 30px 54px 30px;
+    }
+}

@@ -15,14 +15,17 @@ body {
 .header-wrapper {
     position: fixed;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     height: 54px;
     padding: 15px 24px;
     top: 0;
     background-color: var(--background-primary);
     z-index: 1;
+}
+
+.header__logo-nav-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .burger {
@@ -84,7 +87,7 @@ body {
 }
 
 /* more-pages section */
-.page-footer{
+.page-footer {
     display: flex;
     flex-direction: column;
 }
@@ -94,7 +97,7 @@ body {
     order: 2;
 }
 
-.about-us-wrapper{
+.about-us-wrapper {
     margin: 0 30px;
 }
 
@@ -103,9 +106,8 @@ body {
     order: 3;
 }
 
-.policy-wrapper{
+.policy-wrapper {
     padding: 30px 30px 54px;
-
     order: 4;
 }
 
@@ -168,13 +170,13 @@ body {
         padding: 0 54px 54px;
     }
 
-    .about-us-wrapper{
+    .about-us-wrapper {
         order: 1;
         width: 80%;
         margin: 0 54px;
     }
-    
-    .more-pages{
+
+    .more-pages {
         order: 3;
         margin: 0;
     }
@@ -184,17 +186,67 @@ body {
         padding-top: 0;
     }
 
-    .policy-wrapper{
+    .policy-wrapper {
         display: flex;
         justify-content: space-between;
     }
 
-    .more-pages__nav{
+    .more-pages__nav {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 54px;
     }
-
 }
 
-@media (min-width: 1440px) {}
+@media (min-width: 1024px) {
+
+    /* header */
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__logo-nav-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /* categories section */
+    .categories-section-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .categories-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1005px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1440px) {
+    /* more-pages section */
+    .more-pages__nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 54px;
+        padding-top: 48px;
+    }
+
+    .page-footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0 86px;
+    }
+
+    .more-pages {
+        order: 1;
+        grid-column: span 2;
+    }
+
+    .policy-wrapper {
+        grid-column: span 2;
+    }
+}
